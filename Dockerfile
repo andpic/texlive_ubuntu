@@ -6,4 +6,5 @@ RUN apt-get update -y -q \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
     texlive-full \
     python3 \
-    git
+    git \
+  && ln -s /usr/bin/python3 /usr/bin/python
